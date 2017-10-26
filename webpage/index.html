@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>pavitram_blog</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300i|Lora:400i|Open+Sans:300|Playball|Quicksand|Tangerine:700" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+        <style>
+            .intro-header { 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: rgb(255, 70, 70);
+    background-size: cover;
+    height: auto;
+                }
+                .intro-header1 { 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: rgb(58, 55, 85);
+    background-size: cover;
+    height: fixed;
+    overflow: hidden; 
+                }
+                .intro-header2 { 
+    padding-top: 3%; 
+    padding-bottom: 3%;
+    text-align: center;
+    background-color: rgb(58, 55, 85);
+    background-size: cover;
+    height: fixed;
+    overflow: hidden; 
+                }
+                h4,h3{
+                    word-wrap: break-word;
+                }
+                .btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    font-family: 'Quicksand',serif;
+    background-color: rgb(3, 2, 3);
+    border-color: rgb(3, 2, 3);
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+
+
+
+  img {
+   padding:10px;
+    
+  }
+  .fa-cog {
+    color: rgb(233, 30, 30);
+    
+  }
+  #ew{
+      
+      padding:1% 20%;
+  }
+  .icon-background4 {
+    color: #e7f52b;
+}
+.btn1 {
+    border: 5px solid #fdfbfb;
+    
+    display: inline-block;
+    padding: 0.5% 5%;
+    position: relative;
+    text-align: center;
+    transition: background 600ms ease, color 600ms ease;
+  }
+  input[type="radio"].toggle {
+    display: none;
+  }
+  input[type="radio"].toggle + label {
+    cursor: pointer;
+    min-width: 60px;
+  }
+  input[type="radio"].toggle + label:hover {
+    background: none;
+    color: #db1414;
+    background-color: rgb(250, 244, 250);
+  }
+  input[type="radio"].toggle + label:after {
+    background: #f7f1f1;
+    background-color: rgb(240, 98, 33);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: -1;
+  }
+  input[type="radio"].toggle.toggle-left + label {
+    border-right: 0;
+  }
+  input[type="radio"].toggle.toggle-left + label:after {
+    left: 100%;
+  }
+  input[type="radio"].toggle.toggle-right + label {
+    margin-left: -5px;
+  }
+  input[type="radio"].toggle.toggle-right + label:after {
+    left: -100%;
+  }
+  input[type="radio"].toggle:checked + label {
+    cursor: default;
+    color: #fff;
+    background-color: rgb(240, 63, 32);
+    transition: color 200ms;
+  }
+  input[type="radio"].toggle:checked + label:after {
+    left: 0;
+  }
+  h1,h4,span,label{
+      color:white;
+  }
+  h1,h4{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: italic;
+      
+  }
+  #day{
+      padding:1% 4%;
+      background-color: red;
+      color:#f7f1f1;
+  }
+  #para{
+      padding:1% 1%;
+      font-size: 25px;
+  }
+  #tab{
+      padding:1% 6%
+  }
+  #float1{
+      float:left;
+  }
+  #review{
+    border: 5px solid #fdfbfb;
+    
+    display: inline-block;
+    padding: 0.5% 10%;
+    position: relative;
+    text-align: center;
+  }
+  .carousel-caption{
+  padding-bottom: 100px;
+}
+#abc{
+    padding:1% 10% 10% 10%;
+}
+.thick-green-border {
+    
+    
+    border-radius: 60%;
+  }
+
+  .smaller-image {
+    width: 150px;
+  }
+  a{
+      color:rgba(75, 74, 74,1);
+  }
+  #sp{
+      padding:0% 5%;
+  }
+  h1{
+    font-family: 'Lora', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+  }
+  h4{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+  }
+  h3,span{
+    font-family: 'Quicksand', sans-serif;
+    color:rgb(189, 183, 183);
+    font-size: 25px;
+    
+  }
+  #rew{
+      font-size: 18px;
+  }
+  
+  
+        </style>
+    </head>    
+    <body>
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">PavithramHolidays</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                            <a class="nav-link" href="#Gallery">GALLERY </a>
+                    </li>
+                    <li class="nav-item ">
+                            <a class="nav-link" href="#About">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#tours">TOURS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#blog">BLOG</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <a name="home"></a>
+            <div class="intro-header" >
+                <div class="bg-overlay">
+                    <div class="container">
+                        <div class="row">
+                           <div class="col-lg-6 text-left">
+                                <h1>Majestic Andaman</h1>
+                                <h4>
+                                    With breathtakingly beatiful coastline,<br>
+                                    lush forested interior,fantastic diving<br>
+                                    possibilities and a far-flung location,<br>
+                                    the Andaman Islands are a perfect <br>
+                                    place to ramble around or simply<br> chill out on sun-toasted beaches.<br>
+                                    <br>
+                                    Shimmering turquoise waters are <br>surrounded by primeval jungle<br>
+                                    and mangrove forest,and<br>
+                                    its sugar-white beaches<br>
+                                    melt under glorious<br>
+                                    flame-and-purple<br>
+                                    sunsets.
+
+                                </h4>
+                           </div> 
+                           <div class="col-lg-6 text-right">
+                                <button class="btn btn-primary btn-lg">BOOK NOW</button>
+                          
+                                <img src="1.png" class="img-fluid" alt="bag" />
+                            </div>
+                              
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <a name="Gallery"></a>
+            <div class="intro-header1" >
+                <div class="bg-overlay">
+                    <div class="container">
+                        <div class="row" id="ew" >
+                                <a href="#">
+                                <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x icon-background4"></i>
+                                        <i class="fa fa-cog  fa-plane fa-stack-1x"></i>
+                                </span>
+                                <span><br>Flights</span>
+                                </a>
+                                <a href="#">
+                                        <span class="fa-stack fa-4x">
+                                                <i class="fa fa-circle fa-stack-2x icon-background4"></i>
+                                                <i class="fa fa-cog  fa-bus fa-stack-1x"></i>
+                                        </span>
+                                        <span><br>Transfers</span>
+                                 </a>
+                                
+                                <a href="#">
+                                <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x icon-background4"></i>
+                                        <i class="fa fa-cog  fa-bed fa-stack-1x"></i>
+                                </span>
+                                
+                                
+                                <span><br>stays</span>
+                                </a>
+                                <a href="#">
+                                <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x icon-background4"></i>
+                                        <i class="fa fa-cog  fa-cutlery fa-stack-1x"></i>
+                                </span>
+                                <span><br>Meals</span>
+                                </a>
+                                <a href="#">
+                                <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x icon-background4"></i>
+                                        <i class="fa fa-cog  fa-gamepad fa-stack-1x"></i>
+                                </span>
+                                <span><br>Activities</span>
+                                </a>
+                                                  
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <a name="About"></a>
+            <div class="intro-header1" >
+                    <div class="bg-overlay">
+                        <div class="container">
+                                <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+                                <label for="toggle-on" class="btn1 ">ITINENRY</label>
+                                <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+                                <label for="toggle-off" class="btn1">DESTINATION INFO</label>
+                                <br>
+                                <br>
+                        </div>
+                        
+                        
+                    </div>
+            </div>
+            <a name="tours"></a>
+            <div class="intro-header2">
+                    <div class="container text-left">
+                            <span id="day">DAY1</span>
+                            <span id="para">Arrival To Port Blair</span>
+                        </div>
+                        <div class="text-left" id="tab">
+                                <img src="3.png" class="img-fluid" id="float1"  alt="Image"> 
+                            <span class="text-justify"><h3> <br>Arrive to the airport and get transport to your hotel.Later visit the Corbyn's Cove beach and subsequently exprience the light and sound 
+                                show at Cellular Jail.Return early for a early start on the next Day.Overnight at hotel.</h3></span>
+                        </div>
+            </div>
+            <div class="intro-header2">
+                    <div class="container text-left">
+                            <span id="day">DAY2</span>
+                            <span id="para"> Port Blair to Havelock</span>
+                        </div>
+                        <div class="text-left" id="tab">
+                                <img src="4.png" class="img-fluid" id="float1"  alt="Image"> 
+                            <span class="text-justify"><h3>Today, We Start Our Journey Towards Havelock Island Via Ferry From Port Blair Harbour. On Arrival At Havelock Island, Our Representative Will Receive And Escort You To Check-In To The Resort. Post Lunch We Proceed To Radhanagar Beach (Beach No. 7), The Times Magazine Rated The Finest Beach Among The Best Beaches In Asia. It Is An Ideal Place For Swimming, Sea Bathing And Basking On The Sun Kissed Beach.</h3></span>
+                        </div>
+            </div>
+            <div class="intro-header2">
+                    <div class="container text-left">
+                            <span id="day">DAY3</span>
+                            <span  class="font-weight-light" id="para">Havelock To Port Blair</span>
+                        </div>
+                        <div class="text-left" id="tab">
+                                <img src="5.png" class="img-fluid" id="float1"  alt="Image"> 
+                            <span class="text-justify"><h3>In The Morning Proceed To Neil By Ferry From Havelock .Today We Proceed For A Full Day Joyful Trip To Neil, We Visit To Sitapur, Baratpur Beach And Then To Coral Point
+                                    After Lunch We Start Our Journey Towards Port Blair Via Ferry From Neil Harbour. On Arrival At Port Blair Our Representative Will Receive And Escort You To Check-In To The Resort. </h3></span>
+                        </div>
+            </div>
+            <a name="blog"></a>
+            <div class="intro-header1">
+                <span class="text-center" id="review"><h2>Reviews</h2></span>
+                </div>
+                <div class="intro-header1 text-left">
+                        <a href="#"><i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i></a>
+                        <img class="smaller-image thick-green-border" src="6.png" alt=" ">
+                        <span id="rew">Rimha Gupta :"This place is like heaven on earth for nature lovers.It is also a private Place for Hustle-Bustle of city life." </span>
+                        <a href="#"><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="intro-header" >
+                    <div class="bg-overlay">
+                        <div class="container">
+                            <div class="row">
+                               <div class="col-lg-6 text-left">
+                                   <span>pavithramholidays.com<br>About<br>Contact us</span>
+                               </div>
+                               <div class="col-lg-6 text-right">
+                                    <i class="fa fa-facebook-square fa-2x sp" aria-hidden="true"></i>   
+                                    <i class="fa fa-twitter-square fa-2x sp" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin-square fa-2x sp" aria-hidden="true"></i>
+                                    <i class="fa fa-envelope fa-2x sp" aria-hidden="true"></i>
+                                    <br><br>
+                                    <span>&copy;All rights Reserved 2017.</span>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+            </div>               
+    </body>
+
+</html>    
